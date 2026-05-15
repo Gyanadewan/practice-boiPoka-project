@@ -17,7 +17,7 @@ function Book({singleBook}) {
   <div className="card-body w-2/3 mx-auto my-3 p-1">
     <div className='flex justify-center gap-10'>
          {
-      tags.map(tag=> <button >{tag}</button>)
+      tags.map((tag,index)=> <button key={index}>{tag}</button>)
      }
     </div>
     <div className='flex  justify-between'>
